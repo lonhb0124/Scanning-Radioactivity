@@ -56,7 +56,7 @@ We included our generated occupancy map to work with our RRT code
 3. Scan Radioactivity - new state that scans a rectangular grid and displays in map
 4. Returning from Task - Returning using RRT path.
 5. Task Done
-
+-----------------------------------------------------------------------------------------------------
 
 1. At Start state
 
