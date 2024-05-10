@@ -115,3 +115,7 @@ We only scan for radioactivity as we move 2m across the designated area
 
 ![image](https://github.com/lonhb0124/Scanning-Radioactivity/assets/111609834/33266f09-49f0-493c-b771-f9715b87b947)
 
+# Video Link
+
+https://drive.google.com/file/d/10LB-rZV0ygeDI6XIYbqVe5WBhCARzBJc/view
+
