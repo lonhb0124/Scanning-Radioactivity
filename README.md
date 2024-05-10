@@ -30,12 +30,12 @@ We included our generated occupancy map to work with our RRT code
 
 ● Press key ‘K’ to integrate RRT code
 
-○ Dilation object point in the image
+1. Dilation object point in the image
 
-○ Generates nodes and line segments incrementally
+2. Generates nodes and line segments incrementally
 
 - The length (line segments/path) between nodes is 0.45m which is 9 pixels.
 - Once a single node sees a clear path to goal, RRT Tree generation stops and a direct path from current node to goal is created
 - Initially, the goal point is red and other nodes are green. Once the shortest path is found, shortest path nodes change in colour from green to red (including the shortest path lines)
 
-○ Includes Dijkstra’s algorithm to find the shortest path from start to goal
+3. Includes Dijkstra’s algorithm to find the shortest path from start to goal
