@@ -67,6 +67,7 @@ We included our generated occupancy map to work with our RRT code
 2. Heading to Task (move using RRT path for scanning radioactivity)
 
 ● In this state, the robot moves using the RRT shortest path (From initial position to goal position). Our algorithm is that we store shortest path nodes list and consider the final node as last goal
+
 ● We used the “drive to goal algorithm” to handle the robot’s movement, it was already given from the previous assignment and lab.
 
 ● Final node of RRT is at the bottom-left corner point of the area for scanning radioactivity.
