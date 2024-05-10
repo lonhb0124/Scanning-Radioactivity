@@ -1,4 +1,7 @@
 # Scanning-Radioactivity
+This project 
+
+* Requirement : Ros2 Humble in Linux, Gazebo
 
 # Keyboard key implementation
 ● We used keys to operate different processes while our program is running:
@@ -39,3 +42,8 @@ We included our generated occupancy map to work with our RRT code
 - Initially, the goal point is red and other nodes are green. Once the shortest path is found, shortest path nodes change in colour from green to red (including the shortest path lines)
 
 3. Includes Dijkstra’s algorithm to find the shortest path from start to goal
+
+![image](https://github.com/lonhb0124/Scanning-Radioactivity/assets/111609834/9607b312-e61b-45d8-ae29-d3d25812089f)
+
+
+
