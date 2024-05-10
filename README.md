@@ -1,7 +1,7 @@
 # Scanning-Radioactivity
 This project to simulate automation Scanning Radioactivity robot using RRT algorithm
 
-* Requirement : Ros2 Humble, Gazebo, Linux
+* Requirement : Ros2 Humble, Gazebo, Linux, CV2
 
 # Keyboard key implementation
 ● We used keys to operate different processes while our program is running:
