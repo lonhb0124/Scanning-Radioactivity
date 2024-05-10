@@ -52,37 +52,38 @@ We included our generated occupancy map to work with our RRT code
 ● This process has five states.
 
 1. At Start
-2. Heading to Task
-a. MODIFICATION: move using RRT path for scanning radioactivity
-3. Scan Radioactivity
-a. ADDITION: new state that scans a rectangular grid and displays in
-map
-4. Returning from Task
-a. MODIFICATION: returning using RRT path.
+2. Heading to Task - move using RRT path for scanning radioactivity
+3. Scan Radioactivity - new state that scans a rectangular grid and displays in map
+4. Returning from Task - Returning using RRT path.
 5. Task Done
+
+
 1. At Start state
-2. 
+
 ● The current robot position is the initial position of FSM
 
 ● Wait 2 seconds to start and move to next state (Heading to task)
 
-3. Heading to Task (move using RRT path for scanning radioactivity)
+2. Heading to Task (move using RRT path for scanning radioactivity)
 
 ● In this state, the robot moves using the RRT shortest path (From initial position to goal position). Our algorithm is that we store shortest path nodes list and consider the final node as last goal
-○ We used the “drive to goal algorithm” to handle the robot’s movement, it was already given from the previous assignment and lab.
+● We used the “drive to goal algorithm” to handle the robot’s movement, it was already given from the previous assignment and lab.
 
 ● Final node of RRT is at the bottom-left corner point of the area for scanning radioactivity.
 
-○ This is the starting point for the scan radioactivity task
+● This is the starting point for the scan radioactivity task
 
 ● If the robot arrive in the final nodes, move to next state (Scan Radioactivity)
 
-5. Scan Radioactivity
+3. Scan Radioactivity
 
 ● In this state the robot starts scanning radioactivity in an area with 1m width and 2m height.
 
-○ Instead of 2m x 1m (x by y) we implemented the grid to be 1m x 2m (x by y)
+● Instead of 2m x 1m (x by y) we implemented the grid to be 1m x 2m (x by y)
 
 ● During the scanning radioactivity, the scanning area will be filled in the display as a black rectangle.
+
+![image](https://github.com/lonhb0124/Scanning-Radioactivity/assets/111609834/3b0ab5dd-09b5-4a19-beca-c2baedc429f4)
+
 
 
