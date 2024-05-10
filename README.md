@@ -17,9 +17,11 @@
 # Generate Occupancy Map Image
 
 ● To generate our occupancy map, we divided the process into multiple steps
+
 1) Press key ‘J’ to start the map recording process. Using a modified LIDAR Robot, we
 enabled the front, left and right sensors of the LIDAR. Then, once we move it to an
 unoccupied space, we spin the robot on the spot to generate our map in real-time
+
 2) Save and read the generated occupancy map as a jpeg image. Stored in the current
 directory. As an additional implementation, we can re-display the saved map by
 pressing the key ‘L’.
@@ -29,9 +31,13 @@ pressing the key ‘L’.
 # Integrating RRT to Solve Start to Goal (Path Planning and Execution)
 
 We included our generated occupancy map to work with our RRT code
+
 ● Press key ‘K’ to integrate RRT code
+
 ○ Dilation object point in the image
+
 ○ Generates nodes and line segments incrementally
+
 - The length (line segments/path) between nodes is 0.45m which is 9
 pixels.
 - Once a single node sees a clear path to goal, RRT Tree generation
