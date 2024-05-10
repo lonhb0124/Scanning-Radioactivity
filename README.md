@@ -1,7 +1,7 @@
 # Scanning-Radioactivity
 This project 
 
-* Requirement : Ros2 Humble in Linux, Gazebo
+* Requirement : Ros2 Humble, Gazebo, Linux
 
 # Keyboard key implementation
 ● We used keys to operate different processes while our program is running:
@@ -45,5 +45,37 @@ We included our generated occupancy map to work with our RRT code
 
 ![image](https://github.com/lonhb0124/Scanning-Radioactivity/assets/111609834/9607b312-e61b-45d8-ae29-d3d25812089f)
 
+# Scanning Radioactivity
+
+● Press key ‘S’ to start Scanning Radioactivity
+● This process has five states.
+1. At Start
+2. Heading to Task
+a. MODIFICATION: move using RRT path for scanning radioactivity
+3. Scan Radioactivity
+a. ADDITION: new state that scans a rectangular grid and displays in
+map
+4. Returning from Task
+a. MODIFICATION: returning using RRT path.
+5. Task Done
+1. At Start state
+● The current robot position is the initial position of FSM
+● Wait 2 seconds to start and move to next state (Heading to task)
+2. Heading to Task (move using RRT path for scanning radioactivity)
+● In this state, the robot moves using the RRT shortest path (From initial position to
+goal position). Our algorithm is that we store shortest path nodes list and consider the
+final node as last goal
+○ We used the “drive to goal algorithm” to handle the robot’s movement, it was
+already given from the previous assignment and lab.
+● Final node of RRT is at the bottom-left corner point of the area for scanning
+radioactivity.
+○ This is the starting point for the scan radioactivity task
+● If the robot arrive in the final nodes, move to next state (Scan Radioactivity)
+3. Scan Radioactivity
+● In this state the robot starts scanning radioactivity in an area with 1m width and 2m
+height.
+○ Instead of 2m x 1m (x by y) we implemented the grid to be 1m x 2m (x by y)
+● During the scanning radioactivity, the scanning area will be filled in the display as a
+black rectangle.
 
 
