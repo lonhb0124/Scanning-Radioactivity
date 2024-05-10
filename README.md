@@ -16,6 +16,27 @@
 
 # Generate Occupancy Map Image
 
-We already saved a jpg image from assignment 3 using LIDAR so we just called the
-● image to be used as the map for the RRT algorithm.
-○ Press key ‘X’ to call image
+● To generate our occupancy map, we divided the process into multiple steps
+1) Press key ‘J’ to start the map recording process. Using a modified LIDAR Robot, we
+enabled the front, left and right sensors of the LIDAR. Then, once we move it to an
+unoccupied space, we spin the robot on the spot to generate our map in real-time
+2) Save and read the generated occupancy map as a jpeg image. Stored in the current
+directory. As an additional implementation, we can re-display the saved map by
+pressing the key ‘L’.
+
+![image](https://github.com/lonhb0124/Scanning-Radioactivity/assets/111609834/edb67bd7-6232-4220-ba87-7a4fdeab4483)
+
+# Integrating RRT to Solve Start to Goal (Path Planning and Execution)
+
+We included our generated occupancy map to work with our RRT code
+● Press key ‘K’ to integrate RRT code
+○ Dilation object point in the image
+○ Generates nodes and line segments incrementally
+- The length (line segments/path) between nodes is 0.45m which is 9
+pixels.
+- Once a single node sees a clear path to goal, RRT Tree generation
+stops and a direct path from current node to goal is created
+- Initially, the goal point is red and other nodes are green. Once the
+shortest path is found, shortest path nodes change in colour from green
+to red (including the shortest path lines)
+○ Includes Dijkstra’s algorithm to find the shortest path from start to goal
