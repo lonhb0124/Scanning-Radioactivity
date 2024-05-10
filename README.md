@@ -83,7 +83,34 @@ We included our generated occupancy map to work with our RRT code
 
 ● During the scanning radioactivity, the scanning area will be filled in the display as a black rectangle.
 
+4. Returning from Task
+
+● In this state, the robot moves using the RRT shortest path, but the robot uses shortest path nodes list inversely to return to the initial point (initial position of FSM).
+
+5. Task Done
+
+● Wait 2 seconds and finish the task.
+
 ![image](https://github.com/lonhb0124/Scanning-Radioactivity/assets/111609834/3b0ab5dd-09b5-4a19-beca-c2baedc429f4)
 
+# Scanning Radioactivity Pattern
+The 1st step is to go right by offset_length, which is 0.25m.
 
+The 2nd step is to move up across the length of 2m
+
+The 3rd step is the same as the 1st step
+
+The 4th step is to move down across the length of 2m
+
+The 5th step is the same as First step
+
+The 6th step is the same as the 2nd step.
+
+The last step is to go back to the corner point of the area, which is the initial point for scanning radioactivity.
+
+We only scan for radioactivity as we move 2m across the designated area
+
+● Robot scans the right and left side by 0.25m (total 0.5m in length) as a line that is perpendicular along the 2m path.
+
+![image](https://github.com/lonhb0124/Scanning-Radioactivity/assets/111609834/33266f09-49f0-493c-b771-f9715b87b947)
 
