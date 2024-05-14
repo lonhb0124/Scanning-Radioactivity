@@ -9,7 +9,8 @@ This project to simulate automation Scanning Radioactivity robot using RRT algor
 ![image](https://github.com/lonhb0124/Scanning-Radioactivity/assets/111609834/3dc8e905-5954-4d0e-a2d2-613f19f145e1)
 
 # Model in the map (Gazebo)
-● We used the same world (blueprint floor plan model).
+● We used the blueprint floor plan model as world.
+
 ● This world includes the house’s walls as obstacles and a laser robot.
 
 ![image](https://github.com/lonhb0124/Scanning-Radioactivity/assets/111609834/af81208b-9a58-413c-af15-c5479ad96f20)
